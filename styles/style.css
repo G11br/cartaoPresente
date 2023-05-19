@@ -28,6 +28,17 @@ body{
     align-items: center;
     justify-content: space-between;
 }
+
+.conteudo-principal-carta{
+    padding: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.conteudo-principal-carta img{
+    border-radius: 25px;
+}
+
 .conteudo-principal img{
     border-radius: 25px;
 }
@@ -38,6 +49,9 @@ body{
     text-align: center;
     font-size: 36px;
     font-family: 'Kroka One', sans-serif;
+}
+.conteudo-principal-texto p{
+    font-size: 24px;
 }
 .rodape{
     background-color: #ff9e9e;
