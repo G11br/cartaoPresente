@@ -3,83 +3,138 @@
     margin: 0px;
     padding: 0px;
 }
+:root{
+    --cor-principal: #f6f6f6;
+    --cor-rosa: #ff9e9e;
+    --cor-preto: #000000;
+}
 body{
-    background-color: #f5f5f5;
-    box-sizing: border-box;
-    color: #ff9e9e;
+    background-color: var(--cor-principal);
+    color: var(--cor-rosa);
+    font-family: 'Krona One';
 }
 .cabecalho{
-    padding: 1% 0% 1% 15%;
-    background-color: #ff9e9e;
+    background-color: var(--cor-rosa);
+    padding: 1% 15%;
 }
-.navigation{
+.cabecalho-navegacao{
     display: flex;
-    align-items: center;
     gap: 40px;
 }
-.links{
+.cabecalho-navegacao a{
+    font-size: 1.5rem;
     text-decoration: none;
-    font-size: 22px;
-    font-family: 'Montserrat', sans-serif;
-    color: #f5f5f5;
+    color: var(--cor-principal);
+    font-family: 'Montserrat';
 }
-.conteudo-principal{
-    padding: 12% 15%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.conteudo-principal-carta{
+.area-principal{
     padding: 10% 15%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    gap: 80px;
 }
-.conteudo-principal-carta img{
-    border-radius: 25px;
+.area-principal-conteudo{
+    width: 50%;
 }
-
-.conteudo-principal-fotos{
-    padding: 8% 15%;
+.area-principal-conteudo h1{
+    text-align: center;
+    font-size: 1.75rem;
+}
+.area-principal-foto{
+    width: 50%;
+}
+.imagem{
+    border-radius: 30px;
+}
+.area-carta{
+    background-image: linear-gradient(130deg, var(--cor-rosa), var(--cor-rosa), var(--cor-principal));
+    padding: 10% 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+.area-carta-conteudo{
+    color: var(--cor-principal);
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
-.conteudo-principal-fotos h1{
+.area-carta-conteudo h1{
+    font-size: 1.75rem;
     text-align: center;
-    font-size: 36px;
-    font-family: 'Kroka One', sans-serif;
 }
-.fotos{
-    display: flex;
-    justify-content: space-between;
+.area-carta-conteudo p{
+    font-size: 1.25rem;
 }
-.fotos img{
-    border-radius: 25px;
+.area-carta-foto{
+    width: 50%;
 }
-
-.conteudo-principal img{
-    border-radius: 25px;
-}
-.conteudo-principal-texto{
+.area-fotos{
+    padding: 10% 15%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+.area-fotos-titulo{
+    text-align: center;
+    font-size: 1.75rem;
+}
+.area-fotos-album{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+.area-fotos-album div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.area-fotos-album div img{
+    width: 30%;
+    border: solid 1px black;
+    border-radius: 30px;
+}
+.area-brincadeira{
+    background-image: url(../assests/imagemDeFundo.png);
+    padding: 10% 15%;
+    color: var(--cor-preto);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+.area-brincadeira-historia{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+}
+.area-brincadeira-conteudo{
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.area-brincadeira-conteudo-botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
-    width: 580px;
 }
-.conteudo-principal-texto h1{
-    text-align: center;
-    font-size: 36px;
-    font-family: 'Kroka One', sans-serif;
-}
-.conteudo-principal-texto p{
-    font-size: 24px;
-}
-.rodape{
+.area-brincadeira-conteudo-botoes button{
+    padding: 2.5% 5%;
+    border: 0px;
+    border-radius: 20px;
     background-color: #ff9e9e;
-    color: #f5f5f5;
-    padding: 24px 0px;
-    text-align: center;
-    font-size: 24px;
+    transition: 0.3s;
+}
+.area-brincadeira-conteudo-botoes button:hover{
+    letter-spacing: 2px;
 }
