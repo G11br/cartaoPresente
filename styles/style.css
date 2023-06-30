@@ -26,6 +26,10 @@ body{
     text-decoration: none;
     color: var(--cor-principal);
     font-family: 'Montserrat';
+    transition: 0.3s;
+}
+.cabecalho-navegacao a:hover{
+    letter-spacing: 3px;
 }
 .area-principal{
     padding: 10% 15%;
@@ -115,12 +119,24 @@ body{
     gap: 40px;
     width: 50%;
 }
+.area-brincadeira-historia h1{
+    font-size: 1.75rem;
+}
+.area-brincadeira-historia p{
+    font-size: 1.25rem
+}
 .area-brincadeira-conteudo{
     text-align: center;
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
+}
+.area-brincadeira-conteudo h1{
+    font-size: 1.75rem;
+}
+.area-brincadeira-conteudo p{
+    font-size: 1.25rem
 }
 .area-brincadeira-conteudo-botoes{
     display: flex;
@@ -129,12 +145,23 @@ body{
     gap: 30px;
 }
 .area-brincadeira-conteudo-botoes button{
-    padding: 2.5% 5%;
+    padding: 2.5% 8%;
     border: 0px;
     border-radius: 20px;
     background-color: #ff9e9e;
     transition: 0.3s;
+    font-size: 1.25rem;
 }
 .area-brincadeira-conteudo-botoes button:hover{
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+}
+.rodape{
+    padding: 1% 0%;
+    background-color: var(--cor-rosa);
+    color: var(--cor-principal);
+    font-size: 1.25rem;
+    text-align: center;
+}
+.area-brincadeira-conteudo-resposta{
+    color: rgb(177, 82, 82);
 }
